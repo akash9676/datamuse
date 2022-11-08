@@ -19,7 +19,7 @@ const Home = () => {
                         onChange={(e) => setWord(e.target.value)}
                         className="mb-4 h-10 border-2 rounded border-gray-600"
                     />
-                    <div className="grid grid-cols-6 gap-5">
+                    <div className="grid gap-5 grid-cols-2 md:grid-cols-3 lg:grid-cols-6">
                         {buttons.map((button) => {
                             const { id, name } = button;
                             return (

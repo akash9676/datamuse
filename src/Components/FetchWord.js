@@ -18,8 +18,8 @@ const FetchWord = () => {
 
     return (
         <div>
-            <ul className="grid place-items-center h-screen ">
-                <div className="grid grid-rows-8 grid-flow-col gap-5">
+            <ul className="grid place-items-center h-screen mt-6">
+                <div className="grid grid-flow-row grid-rows-1 gap-5 md:grid-cols-3 lg:grid-cols-6">
                     {data.map((item) => (
                         <li
                             key={item.word}
@@ -29,7 +29,7 @@ const FetchWord = () => {
                         </li>
                     ))}
                 </div>
-                <div className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                <div className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-5">
                     <Link to="/" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Home</Link>
                 </div>
             </ul>
