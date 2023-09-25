@@ -15,7 +15,7 @@ const Home = () => {
                     <input
                         id="input"
                         value={word}
-                        placeholder="Enter your word"
+                        placeholder="Example : fire"
                         onChange={(e) => setWord(e.target.value)}
                         className="mb-4 h-10 border-2 rounded border-gray-600"
                     />
